@@ -1,13 +1,13 @@
 public class BodyMassIndex
 {
     public double bmi;
-    public BodyMassIndex(double bmiH, double bmiW)
+    public BodyMassIndex(double bmiH, double bmiW) // Takes the height and weight, puts them through the formula for BMI
     {
         bmi = (703 * bmiW) / (bmiH * bmiH);
-        bmi = (Math.round(bmi * 10.0) / 10.0);
+        bmi = (Math.round(bmi * 10.0) / 10.0); // Rounds the BMI to 1 decimal place
     }
 
-    public String bmiCat()
+    public String bmiCat() // Tests BMI for proper category and returns the string of that category
     {
         if(bmi < 18.5)
         {
